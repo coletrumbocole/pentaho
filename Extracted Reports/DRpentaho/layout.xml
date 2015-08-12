@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns="http://reporting.pentaho.org/namespaces/engine/classic/bundle/layout/1.0" xmlns:style="http://reporting.pentaho.org/namespaces/engine/classic/bundle/style/1.0" xmlns:core="http://reporting.pentaho.org/namespaces/engine/attributes/core" xmlns:html="http://reporting.pentaho.org/namespaces/engine/attributes/html" xmlns:swing="http://reporting.pentaho.org/namespaces/engine/attributes/swing" xmlns:pdf="http://reporting.pentaho.org/namespaces/engine/attributes/pdf" xmlns:wizard="http://reporting.pentaho.org/namespaces/engine/attributes/wizard" xmlns:report-designer="http://reporting.pentaho.org/namespaces/report-designer/2.0" report-designer:preview-dialog-bounds="333.0,14.0,700.0,700.0" core:element-type="master-report">
+  <style:element-style>
+  </style:element-style>
+  <report-header>
+    <root-level-content report-designer:visual-height="359.0" core:element-type="report-header">
+      <style:element-style>
+        <style:common-styles avoid-page-break="true"/>
+      </style:element-style>
+      <legacy-charts:legacy-chart core:element-type="legacy-chart" xmlns:legacy-charts="http://reporting.pentaho.org/namespaces/engine/classic/legacy/charting/1.0">
+        <style:element-style>
+          <style:spatial-styles x="0" y="0" min-width="646" min-height="358"/>
+        </style:element-style>
+        <expression attribute-namespace="http://reporting.pentaho.org/namespaces/engine/classic/legacy/charting/1.0" attribute-name="primary-dataset-expression" class="org.pentaho.plugin.jfreereport.reportcharts.collectors.CategorySetDataCollector">
+          <properties>
+            <property name="seriesName">Loans in Arrears,Loans</property>
+            <property name="valueColumn">Loans,ArrearsNo</property>
+            <property name="seriesColumn"></property>
+            <property name="categoryColumn">BranchName</property>
+            <property name="autoGenerateMissingSeriesNames">true</property>
+          </properties>
+        </expression>
+        <attribute-expression namespace="http://reporting.pentaho.org/namespaces/engine/attributes/core" name="value" class="org.pentaho.plugin.jfreereport.reportcharts.BarChartExpression">
+          <properties>
+            <property name="rangePeriodCount">0.0</property>
+            <property name="threeD" class="java.lang.Boolean">false</property>
+            <property name="legendLocation">bottom</property>
+            <property name="showLegend" class="java.lang.Boolean">true</property>
+            <property name="autoRange" class="java.lang.Boolean">true</property>
+            <property name="horizontal" class="java.lang.Boolean">false</property>
+            <property name="rangeStickyZero" class="java.lang.Boolean">true</property>
+            <property name="plotBackgroundColor">#eeeaea</property>
+            <property name="itemsLabelVisible">true</property>
+            <property name="drawBarOutline" class="java.lang.Boolean">false</property>
+            <property name="returnFileNameOnly" class="java.lang.Boolean">false</property>
+            <property name="titleText">Loans &amp; Loans in Arrears by Branch</property>
+            <property name="stackedBarRenderPercentages" class="java.lang.Boolean">false</property>
+            <property name="noDataMessage">CHART.USER_NO_DATA_AVAILABLE</property>
+            <property name="labelFont">SansSerif--12</property>
+            <property name="valueAxisLabel">Active Loans To Date</property>
+            <property name="categoryMargin">0.1</property>
+            <property name="plotBackgroundAlpha">1.0</property>
+            <property name="seriesColor">#660066,#ff0033,#339900,#cc6600</property>
+            <property name="plotForegroundAlpha">0.75</property>
+            <property name="rangeTickFormatString">#,###</property>
+            <property name="chartSectionOutline" class="java.lang.Boolean">false</property>
+            <property name="maxCategoryLabelWidthRatio">20.0</property>
+            <property name="legendBackgroundColor">black</property>
+            <property name="showGridlines" class="java.lang.Boolean">true</property>
+            <property name="categoricalItemLabelRotation">0.0</property>
+            <property name="categoricalLabelDecimalFormat">#,###; </property>
+            <property name="drawLegendBorder" class="java.lang.Boolean">true</property>
+            <property name="dataSource">Data Collector 0</property>
+            <property name="legendFont">Arial-PLAIN-14</property>
+            <property name="categoricalLabelFormat">{2}</property>
+            <property name="stacked" class="java.lang.Boolean">false</property>
+            <property name="legendTextColor">white</property>
+            <property name="title">Loans &amp; Loans in Arrears by Branch</property>
+            <property name="rangeMinimum">0.0</property>
+            <property name="chartHeight">0</property>
+            <property name="itemMargin">0.0</property>
+            <property name="categoricalAxisMessageFormat">{0}</property>
+            <property name="rangeTitleFont">Arial-plain-14</property>
+            <property name="categoryAxisLabel"></property>
+            <property name="useDrawable" class="java.lang.Boolean">true</property>
+            <property name="rangeMaximum">2000000.0</property>
+            <property name="backgroundColor">#ffffff</property>
+            <property name="maxBarWidth">40.0</property>
+            <property name="returnImageReference" class="java.lang.Boolean">false</property>
+            <property name="humanReadableLogarithmicFormat" class="java.lang.Boolean">false</property>
+            <property name="titleFont">SansSerif-BOLD-14</property>
+            <property name="showBorder" class="java.lang.Boolean">false</property>
+            <property name="chartWidth">0</property>
+            <property name="rangeIncludesZero" class="java.lang.Boolean">true</property>
+            <property name="antiAlias" class="java.lang.Boolean">true</property>
+            <property name="labelRotation">0.7853981633974483</property>
+            <property name="logarithmicAxis" class="java.lang.Boolean">false</property>
+          </properties>
+        </attribute-expression>
+      </legacy-charts:legacy-chart>
+    </root-level-content>
+  </report-header>
+  <group core:element-type="relational-group">
+    <style:element-style>
+    </style:element-style>
+    <fields>
+    </fields>
+    <group-header>
+      <root-level-content report-designer:hideInLayoutGUI="true" core:element-type="group-header">
+        <style:element-style>
+          <style:common-styles avoid-page-break="true"/>
+        </style:element-style>
+      </root-level-content>
+    </group-header>
+    <data-body core:element-type="group-data-body">
+      <style:element-style>
+      </style:element-style>
+      <details-header report-designer:hideInLayoutGUI="true" core:element-type="details-header">
+        <style:element-style>
+          <style:common-styles avoid-page-break="true"/>
+        </style:element-style>
+      </details-header>
+      <details>
+        <root-level-content report-designer:visual-height="108.0" core:element-type="itemband">
+          <style:element-style>
+            <style:common-styles avoid-page-break="true"/>
+          </style:element-style>
+          <text-field core:element-type="text-field" core:field="BranchName">
+            <style:element-style>
+              <style:spatial-styles x="0" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <text-field core:element-type="text-field" core:field="MFO">
+            <style:element-style>
+              <style:spatial-styles x="58.9" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <text-field core:element-type="text-field" core:field="LoanAmt">
+            <style:element-style>
+              <style:spatial-styles x="176.7" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <number-field core:element-type="number-field" core:field="Loans">
+            <style:element-style>
+              <style:spatial-styles x="117.8" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </number-field>
+          <text-field core:element-type="text-field" core:field="OutBalPrin">
+            <style:element-style>
+              <style:spatial-styles x="235.6" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <number-field core:element-type="number-field" core:field="ArrearsNo">
+            <style:element-style>
+              <style:spatial-styles x="294.5" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </number-field>
+          <text-field core:element-type="text-field" core:field="ArrearsAmt">
+            <style:element-style>
+              <style:spatial-styles x="353.4" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <text-field core:element-type="text-field" core:field="NewArrears">
+            <style:element-style>
+              <style:spatial-styles x="412.3" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </text-field>
+          <number-field core:element-type="number-field" core:field="PARAmt">
+            <style:element-style>
+              <style:spatial-styles x="479.1" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </number-field>
+          <number-field core:element-type="number-field" core:field="DRAmt">
+            <style:element-style>
+              <style:spatial-styles x="538" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </number-field>
+          <number-field core:element-type="number-field" core:field="DRNo">
+            <style:element-style>
+              <style:spatial-styles x="596.9" y="0" min-width="58.9" min-height="20"/>
+            </style:element-style>
+          </number-field>
+        </root-level-content>
+      </details>
+      <no-data>
+        <root-level-content report-designer:hideInLayoutGUI="true" core:element-type="no-data-band">
+          <style:element-style>
+            <style:common-styles avoid-page-break="true"/>
+          </style:element-style>
+        </root-level-content>
+      </no-data>
+      <details-footer report-designer:hideInLayoutGUI="true" core:element-type="details-footer">
+        <style:element-style>
+          <style:common-styles avoid-page-break="true"/>
+        </style:element-style>
+      </details-footer>
+    </data-body>
+    <group-footer>
+      <root-level-content report-designer:hideInLayoutGUI="true" core:element-type="group-footer">
+        <style:element-style>
+          <style:common-styles avoid-page-break="true"/>
+        </style:element-style>
+      </root-level-content>
+    </group-footer>
+  </group>
+  <report-footer>
+    <root-level-content report-designer:visual-height="108.0" core:element-type="report-footer">
+      <style:element-style>
+        <style:common-styles avoid-page-break="true"/>
+      </style:element-style>
+    </root-level-content>
+  </report-footer>
+</layout>
