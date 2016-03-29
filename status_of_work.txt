@@ -1,0 +1,9 @@
+Here is where I'm at with the reports:
+Aging of Accounts: it works on Mifos as a Table Report.
+Loan Evaluation Sheet: It works as a Pentaho report on my computer, but I haven't been able to upload the Pentaho report to Mifos. It works on Mifos as a Table.
+As for Branch Status Report, Center Comparative Analysis, Collection Sheet, LLR, Scheduled Due, Loan Disbursement Report, and PAR:
+I've made a query for each one, and they work as MySQL queries, but they don't work on Mifos as Tables. I'm trying to reach out to Mifos Support through Skype and see if they can help. Large data sets don't load in Mifos.
+I've started to create Pentaho reports for each of them, but I'm not done yet.
+What I have left to do is figure out why the queries don't work on Mifos as Tables. I also have to make a Pentaho report for all of them except Loan Evaluation Sheet. Then I will have to try again to figure out how to upload Pentaho reports to Mifos.
+
+Thanks so much for your patience! I hope the migration goes well this week! All the queries are ready, but I'm trying to get them ready to run on Mifos and hopefully as Pentaho reports by the time the migration is complete.
