@@ -29,14 +29,14 @@ from
 	,(sum(if(datediff(curdate(), laa.overdue_since_date_derived) between 91 and 120, l.principal_outstanding_derived, 0) ) * .75) as weighted_par91
 	,sum( if(datediff(curdate(), laa.overdue_since_date_derived) > 120, l.principal_outstanding_derived, 0) ) as weighted_par120
 
-	from m_loan as l
-	left join m_client as c
+	from `mifos-guat`.m_loan as l
+	left join `mifos-guat`.m_client as c
 		on c.id = l.client_id # so that I have no duplication of loans. *All loans have a client, some have same client.
 
-	left join m_office as o 
+	left join `mifos-guat`.m_office as o 
 		on o.id = c.office_id # All clients have office_id. So now each loan has an office_id.
 		
-	left join m_loan_arrears_aging as laa
+	left join `mifos-guat`.m_loan_arrears_aging as laa
 		on l.id = laa.loan_id # not all loans have match an laa.
 	
 	group by o.`name`
@@ -71,14 +71,14 @@ from
 	
 	# no weighted   
 
-	from m_loan as l
-	left join m_client as c
+	from `mifos-guat`.m_loan as l
+	left join `mifos-guat`.m_client as c
 		on c.id = l.client_id
 
-	left join m_office as o 
+	left join `mifos-guat`.m_office as o 
 		on o.id = c.office_id
 		
-	left join m_loan_arrears_aging as laa
+	left join `mifos-guat`.m_loan_arrears_aging as laa
 		on l.id = laa.loan_id 
 	
 	# same as tot above, but not grouped, and no weighted sums
@@ -113,14 +113,14 @@ from
 	,(sum(if(datediff(curdate(), laa.overdue_since_date_derived) between 91 and 120, l.principal_outstanding_derived, 0) ) * .75) as weighted_par91
 	,sum( if(datediff(curdate(), laa.overdue_since_date_derived) > 120, l.principal_outstanding_derived, 0) ) as weighted_par120
 
-	from m_loan as l
-	left join m_client as c
+	from `mifos-guat`.m_loan as l
+	left join `mifos-guat`.m_client as c
 		on c.id = l.client_id
 
-	left join m_office as o 
+	left join `mifos-guat`.m_office as o 
 		on o.id = c.office_id
 		
-	left join m_loan_arrears_aging as laa
+	left join `mifos-guat`.m_loan_arrears_aging as laa
 		on l.id = laa.loan_id 
 	
 	# same table as tot above, but not grouped, and no normal PAR totals
