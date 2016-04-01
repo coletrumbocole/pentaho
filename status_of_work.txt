@@ -2,7 +2,7 @@
 Report Name			| query	| Mifos: table report	| Mifos: Pentaho report	| Pentaho report designed
 --------------------------------+-------+-----------------------+-----------------------+-------------------------------
 Aging of Accounts 		| yes	| yes			| no			| template
-Loan Evaluation Sheet		| yes	| yes 			| no			| template
+Loan Evaluation Sheet		| yes	| yes 			| test			| yes
 Branch Status Report		| yes	| no 			| no			| template
 Center Comparative Analysis	| yes	| no 			| no			| template
 Collection Sheet		| yes	| no 			| no			| template
