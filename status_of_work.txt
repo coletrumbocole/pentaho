@@ -1,4 +1,3 @@
-
 Report Name			| query	| Mifos: table report	| Pentaho report designed	| Mifos: Pentaho report	
 --------------------------------+-------+-----------------------+-------------------------------+-------------------------------
 Aging of Accounts 		| yes	| yes			| template			| no			
