@@ -1,15 +1,15 @@
 
-Report Name			| query	| Mifos: table report	| Mifos: Pentaho report	| Pentaho report designed
---------------------------------+-------+-----------------------+-----------------------+-------------------------------
-Aging of Accounts 		| yes	| yes			| no			| template
-Loan Evaluation Sheet		| yes	| yes 			| no			| template
-Branch Status Report		| yes	| no 			| no			| template
-Center Comparative Analysis	| yes	| no 			| no			| template
-Collection Sheet		| yes	| no 			| no			| template
-LLR				| yes	| no 			| no			| template
-Scheduled Due			| yes	| no 			| no			| template
-Loan Disbursement Report	| yes	| no 			| no			| template
-PAR				| yes	| no 			| test			| yes
+Report Name			| query	| Mifos: table report	| Pentaho report designed	| Mifos: Pentaho report	
+--------------------------------+-------+-----------------------+-------------------------------+-------------------------------
+Aging of Accounts 		| yes	| yes			| template			| no			
+Loan Evaluation Sheet		| yes	| yes 			| yes				| yes			
+Branch Status Report		| yes	| yes 			| template			| no			
+Center Comparative Analysis	| yes	| * 			| template			| no			
+Collection Sheet		| yes	| * 			| template			| no			
+LLR				| yes	| * 			| template			| no			
+Scheduled Due			| yes	| * 			| template			| no			
+Loan Disbursement Report	| yes	| * 			| template			| no			
+PAR				| yes	| * 			| yes				| test			
 
 
 What I have left to do is figure out why the queries don't work on Mifos as Tables. I also have to make a Pentaho report for all of them except Loan Evaluation Sheet. Then I will have to try again to figure out how to upload Pentaho reports to Mifos.
