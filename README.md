@@ -10,7 +10,7 @@ If a Pentaho report is not done, it should be in the "incomplete" folder.
 
 *If you're looking for the MySQL queries for the reports, they are in the queries folder.
 
-The report-designer folder contains the Pentaho Report Designer program (version 6.1.9-GA I believe)
+The report-designer folder contains the Pentaho Report Designer program (version 3.9.1-GA I believe)
 
 The stretchy-report folder contains the SQL for "Table" style reports.
 
