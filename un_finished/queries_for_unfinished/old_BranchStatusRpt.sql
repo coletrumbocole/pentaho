@@ -2,11 +2,11 @@ SELECT
 	*
 FROM
 	(SELECT
-		branch_by_cli 								as "Branch"
+		branch_by_cli 								as "Branch" #
 		,mentor_by_cli 								as "Mentor"
 		,center_by_cli 								as "Center"
 		,mtg_day_by_cli 							as "Mtg Day"
-		,count(c_id) 								as "Clients"
+		,count(c_id) 								as "Clients" # if i just do count(clients) group by mentor,center, this will give me the clients there. But I ouls need to be counting in a table that had all clients and the center and mentor  of the client. 
 		,count( if(loans_by_cli > 0, c_id, NULL) ) 	as "W/ Loan" #58, same as [select count(distinct client_id) from m_loan]
 		,count(if(loans_by_cli = 0, c_id, NULL) ) 	as "W/o Loan"
 		,sum(loans_by_cli) 							as "Loans" # 66, same as [select count(id) from m_loan]
@@ -17,11 +17,17 @@ FROM
 		,sum(new_no_by_cli) 						as "New No"
 		,sum(new_amt_by_cli) 						as "New Amt"
 		,sum(par_amt_by_cli) 						as "PAR Amt"
+        ,'' as "DR %"
+        ,'' as "PAR %"
 		,sum(age_by_cli) 							as "Age"
+        ,''				as "Incentive PAR Amt"
+        ,'' as "Incentive PAR %"
 		,sum(disb_no_by_cli) 						as "Disb No"
 		,sum(disb_amt_by_cli) 						as "Disb Amt"
 		,sum(prin_pd_by_cli) 						as "Prin Pd"
 		,sum(int_pd_by_cli) 						as "Int Pd"
+        ,'' as "NC"
+        ,'' as "Exit"
 
 	from(
 		select
